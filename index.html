@@ -17,42 +17,42 @@
     </div>
     <h1>AI作品集</h1>
     <div class="gallery">
-        <a href="javascript:void(0)" class="work-card" onclick="showVideo('Naturaithm - A Journey Beyond Codes', 'public/作品一覧/Naturaithm A Journey Beyond Codes.png', '15Pv9ga_uZ6KhwCFYgpohFKoAEeeDEGT5')">
-            <img src="public/作品一覧/Naturaithm A Journey Beyond Codes.png" alt="Naturaithm サムネイル" width="200">
-            <h2>No.1 Naturaithm - A Journey Beyond Codes</h2>
-        </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('森羅の誓いー太古の記憶ー', 'public/作品一覧/森羅の誓いー太古の記憶ー/森羅の誓いー太古の記憶ー -サムネイル.jpg', '1Kw-qoUbZp79zm6Fl4GoYiaCW2ul-xT4f')">
             <img src="public/作品一覧/森羅の誓いー太古の記憶ー/森羅の誓いー太古の記憶ー -サムネイル.jpg" alt="森羅の誓い サムネイル" width="200">
-            <h2>No.2 森羅の誓いー太古の記憶ー</h2>
+            <h2>No.1 森羅の誓いー太古の記憶ー</h2>
         </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('Even adults can learn', 'public/作品一覧/Even adults can learn/Even adults can learn-サムネイル.jpg', '1-p4FSgVbEPOC7HTIH1Sw-F-YoK1G8xfE')">
             <img src="public/作品一覧/Even adults can learn/Even adults can learn-サムネイル.jpg" alt="Even adults can learn サムネイル" width="200">
-            <h2>No.3 Even adults can learn</h2>
+            <h2>No.2 Even adults can learn</h2>
         </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('失恋の立ち直り方', 'public/作品一覧/失恋の立ち直り方/【サムネイル】失恋の立ち直り方.jpg', '1mlJaIKWM5TXITgrPv-p-GzrloZiGK8Ty')">
             <img src="public/作品一覧/失恋の立ち直り方/【サムネイル】失恋の立ち直り方.jpg" alt="失恋の立ち直り方 サムネイル" width="200">
-            <h2>No.4 失恋の立ち直り方</h2>
+            <h2>No.3 失恋の立ち直り方</h2>
         </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('大衆先導', 'public/作品一覧/大衆先導/大衆先導2-サムネイル.jpg', '1klmB8yMJkChSv-nW5k9xGycokPHuH3oF')">
             <img src="public/作品一覧/大衆先導/大衆先導2-サムネイル.jpg" alt="大衆先導 サムネイル" width="200">
-            <h2>No.5 大衆先導</h2>
+            <h2>No.4 大衆先導</h2>
         </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('ぼくらのバイオネスト', 'public/作品一覧/バイオネスト/ぼくらのバイオネスト　サムネ.jpg', '1qORYzNud9BUtPnMbaoAOHPng84oXfRfi')">
             <img src="public/作品一覧/バイオネスト/ぼくらのバイオネスト　サムネ.jpg" alt="ぼくらのバイオネスト サムネイル" width="200">
-            <h2>No.6 ぼくらのバイオネスト</h2>
+            <h2>No.5 ぼくらのバイオネスト</h2>
         </a>
         <a href="javascript:void(0)" class="work-card" onclick="showVideo('Songs for Shy People', 'public/作品一覧/Songs for Shy People/Songs for Shy People-2-サムネイル.jpg', '1g_hdwnaMaF3wbvXZjjrvq0CaC8QU0-Jd')">
             <img src="public/作品一覧/Songs for Shy People/Songs for Shy People-2-サムネイル.jpg" alt="Songs for Shy People サムネイル" width="200">
-            <h2>No.7 Songs for Shy People</h2>
+            <h2>No.6 Songs for Shy People</h2>
+        </a>
+        <a href="javascript:void(0)" class="work-card" onclick="showVideo('Naturaithm - A Journey Beyond Codes', 'public/作品一覧/Naturaithm%20%20A%20Journey%20Beyond%20Codes/Naturaithm%20%20A%20Journey%20Beyond%20Codes.png', '15Pv9ga_uZ8KhwCFYgpohFKoAEeeDEGT5')">
+            <img src="public/作品一覧/Naturaithm%20%20A%20Journey%20Beyond%20Codes/Naturaithm%20%20A%20Journey%20Beyond%20Codes.png" alt="Naturaithm サムネイル" width="200">
+            <h2>No.7 Naturaithm - A Journey Beyond Codes</h2>
         </a>
     </div>
     <!-- モーダル（ポップアウト） -->
     <div id="modal" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="overflow-y: auto; max-height: 90vh;">
             <span class="close" id="modalClose">&times;</span>
             <img id="modalImg" src="" alt="サムネイル" style="max-width:300px; display:block; margin:0 auto 1rem auto;">
             <h2 id="modalTitle"></h2>
-            <iframe id="modalIframe" width="560" height="315" frameborder="0" allowfullscreen style="display:none; margin:1rem auto;"></iframe>
+            <iframe id="modalIframe" width="640" height="360" allow="autoplay" frameborder="0" style="display:none; margin:1rem auto; max-width: 100%; height: auto; width: 100%;"></iframe>
         </div>
     </div>
     <div id="searchModal" class="search-modal">
@@ -65,11 +65,6 @@
     <script>
     // 作品データ
     const works = [
-        {
-            title: 'Naturaithm - A Journey Beyond Codes',
-            thumb: 'public/作品一覧/Naturaithm A Journey Beyond Codes.png',
-            video: 'https://drive.google.com/file/d/15Pv9ga_uZ6KhwCFYgpohFKoAEeeDEGT5/preview'
-        },
         {
             title: '森羅の誓いー太古の記憶ー',
             thumb: 'public/作品一覧/森羅の誓いー太古の記憶ー/森羅の誓いー太古の記憶ー -サムネイル.jpg',
@@ -99,6 +94,11 @@
             title: 'Songs for Shy People',
             thumb: 'public/作品一覧/Songs for Shy People/Songs for Shy People-2-サムネイル.jpg',
             video: 'https://drive.google.com/file/d/1g_hdwnaMaF3wbvXZjjrvq0CaC8QU0-Jd/preview'
+        },
+        {
+            title: 'Naturaithm - A Journey Beyond Codes',
+            thumb: 'public/作品一覧/Naturaithm%20%20A%20Journey%20Beyond%20Codes/Naturaithm%20%20A%20Journey%20Beyond%20Codes.png',
+            video: 'https://drive.google.com/file/d/15Pv9ga_uZ8KhwCFYgpohFKoAEeeDEGT5/preview'
         }
     ];
     // カードクリックでモーダル表示
@@ -210,7 +210,7 @@
         modalImg.src = thumbPath;
         modalImg.style.display = 'block';
         modalTitle.textContent = title;
-        modalIframe.src = `https://drive.google.com/file/d/${videoId}/preview`;
+        modalIframe.src = `https://drive.google.com/uc?export=preview&id=${videoId}`;
         modalIframe.style.display = 'block';
     }
 
